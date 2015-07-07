@@ -1,0 +1,131 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:136), pid=3556, tid=9456
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (7.0_55-b14) (build )
+# Java VM: Java HotSpot(TM) Client VM (24.55-b03 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0007c400):  JavaThread "Unknown thread" [_thread_in_vm, id=9456, stack(0x00730000,0x00780000)]
+
+Stack: [0x00730000,0x00780000],  sp=0x0077f5a4,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x18e051]
+V  [jvm.dll+0x187dd6]
+V  [jvm.dll+0x358ba]
+V  [jvm.dll+0x35946]
+V  [jvm.dll+0x43fed]
+V  [jvm.dll+0x4429e]
+V  [jvm.dll+0x926aa]
+V  [jvm.dll+0x92a5b]
+V  [jvm.dll+0x13db41]
+V  [jvm.dll+0x1606ac]
+V  [jvm.dll+0xc8e1f]
+C  [javaw.exe+0x13ce]
+C  [javaw.exe+0x1e40]
+C  [javaw.exe+0xa5b1]
+C  [javaw.exe+0xa63b]
+C  [kernel32.dll+0x4d2e9]
+C  [ntdll.dll+0x41603]
+C  [ntdll.dll+0x415d6]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0007c400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=9456, stack(0x00730000,0x00780000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.038 loading class 0x00c5bf38 done
+Event: 0.039 loading class 0x00c5b9c8 done
+Event: 0.039 loading class 0x00c5b9a8
+Event: 0.039 loading class 0x00c62cd0
+Event: 0.039 loading class 0x00c62cd0 done
+Event: 0.039 loading class 0x00c62d00
+Event: 0.039 loading class 0x00c62d00 done
+Event: 0.039 loading class 0x00c62d30
+Event: 0.039 loading class 0x00c62d30 done
+Event: 0.040 loading class 0x00c5b9a8 done
+
+
+Dynamic libraries:
+0x010f0000 - 0x0111f000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x76e20000 - 0x76f48000 	C:\Windows\system32\ntdll.dll
+0x754e0000 - 0x755bc000 	C:\Windows\system32\kernel32.dll
+0x76bc0000 - 0x76c86000 	C:\Windows\system32\ADVAPI32.dll
+0x76aa0000 - 0x76b62000 	C:\Windows\system32\RPCRT4.dll
+0x767b0000 - 0x7684d000 	C:\Windows\system32\USER32.dll
+0x75790000 - 0x757dc000 	C:\Windows\system32\GDI32.dll
+0x74440000 - 0x745de000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.6002.18305_none_5cb72f2a088b0ed3\COMCTL32.dll
+0x769f0000 - 0x76a9a000 	C:\Windows\system32\msvcrt.dll
+0x76750000 - 0x767a9000 	C:\Windows\system32\SHLWAPI.dll
+0x76f50000 - 0x76f6e000 	C:\Windows\system32\IMM32.DLL
+0x76fb0000 - 0x77078000 	C:\Windows\system32\MSCTF.dll
+0x76f70000 - 0x76f79000 	C:\Windows\system32\LPK.DLL
+0x766a0000 - 0x7671d000 	C:\Windows\system32\USP10.dll
+0x63c90000 - 0x63d4f000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x56050000 - 0x563d0000 	C:\Program Files\Java\jre7\bin\client\jvm.dll
+0x719b0000 - 0x719b7000 	C:\Windows\system32\WSOCK32.dll
+0x76f80000 - 0x76fad000 	C:\Windows\system32\WS2_32.dll
+0x755c0000 - 0x755c6000 	C:\Windows\system32\NSI.dll
+0x73db0000 - 0x73de2000 	C:\Windows\system32\WINMM.dll
+0x757e0000 - 0x75925000 	C:\Windows\system32\ole32.dll
+0x755e0000 - 0x7566d000 	C:\Windows\system32\OLEAUT32.dll
+0x73d70000 - 0x73dae000 	C:\Windows\system32\OLEACC.dll
+0x754d0000 - 0x754d7000 	C:\Windows\system32\PSAPI.DLL
+0x70ab0000 - 0x70abc000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x70910000 - 0x70930000 	C:\Program Files\Java\jre7\bin\java.dll
+0x708f0000 - 0x70903000 	C:\Program Files\Java\jre7\bin\zip.dll
+0x6e530000 - 0x6e60c000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:C:\adt-bundle-windows-x86-20131030\sdk\platforms\android-19\android.jar 
+java_command: com.example.gravballalpha.Physics.PhysicsEngine
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files\Java\jre7\lib\ext\QTJava.zip
+PATH=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;c:\devkitPro\msys\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\hp\bin\Python;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Lua\5.1;C:\Program Files\Lua\5.1\clibs;C:\Program Files\QuickTime\QTSystem\;C:\PROGRA~1\TIEDUC~1\TI-83P~1\UTILS;C:\VXIPNP\WinNT\Bin;C:\Users\Hudson Q\AppData\Local\Bandizip\7z;C:\adt-bundle-windows-x86-20131030\eclipse;
+USERNAME=Hudson Q
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 13, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows Vista Build 6002 Service Pack 2
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 15 stepping 13, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, tsc
+
+Memory: 4k page, physical 3406224k(888532k free), swap 7768772k(936568k free)
+
+vm_info: Java HotSpot(TM) Client VM (24.55-b03) for windows-x86 JRE (1.7.0_55-b14), built on Apr 14 2014 18:25:32 by "java_re" with unknown MS VC++:1600
+
+time: Wed Jun 04 19:17:10 2014
+elapsed time: 0 seconds
+
